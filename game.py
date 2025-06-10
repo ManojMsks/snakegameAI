@@ -124,10 +124,10 @@ class Game(Base):
             if head_x == self.snake.x[i] and head_y == self.snake.y[i]:
                 return True
 
-        if ( head_x > (self.SCREEN_SIZE - self.BLOCK_WIDTH)
-                or head_y > (self.SCREEN_SIZE - self.BLOCK_WIDTH)
-                or head_x < 0
-                or head_y < 0):
+        if head_x > (self.SCREEN_SIZE - self.BLOCK_WIDTH) \
+                or head_y > (self.SCREEN_SIZE - self.BLOCK_WIDTH) \
+                or head_x < 0 \
+                or head_y < 0:
             return True
 
         return False
@@ -140,10 +140,10 @@ class Game(Base):
             if point_x == self.snake.x[i] and point_y == self.snake.y[i]:
                 return True
 
-        if  (point_x > (self.SCREEN_SIZE - self.BLOCK_WIDTH)
-                or point_y > (self.SCREEN_SIZE - self.BLOCK_WIDTH)
-                or point_x < 0
-                or point_y < 0):
+        if point_x > (self.SCREEN_SIZE - self.BLOCK_WIDTH) \
+                or point_y > (self.SCREEN_SIZE - self.BLOCK_WIDTH) \
+                or point_x < 0 \
+                or point_y < 0:
             return True
 
         return False
